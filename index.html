@@ -203,6 +203,13 @@ footer .socials a:hover { border-color: var(--orange); color: var(--orange); }
 .mobile-menu a:last-child { border-bottom: none; }
 .mobile-menu a:hover { color: var(--orange); }
 @media (max-width: 1100px) { .hamburger { display: flex; } nav.top .right { display: none; } }
+@media (max-width: 400px) {
+  .numbers .grid { grid-template-columns: 1fr !important; }
+  .numbers .item { border-right: none; padding: 0; }
+  .hero h1 { font-size: clamp(48px, 14vw, 80px); }
+  .wrap { padding: 0 16px; }
+  nav.top .row { padding: 12px 16px; }
+}
 @media (max-width: 900px) {
   section.trial { padding: 80px 0; }
   .trial .row { grid-template-columns: 1fr !important; }

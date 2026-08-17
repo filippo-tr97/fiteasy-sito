@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8" />
-<title>FitEasy — Allenati. Senza pensieri.</title>
+<title>FitEasy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -204,6 +204,10 @@ footer .socials a:hover { border-color: var(--orange); color: var(--orange); }
 .mobile-menu a:hover { color: var(--orange); }
 @media (max-width: 1100px) { .hamburger { display: flex; } nav.top .right { display: none; } }
 @media (max-width: 900px) {
+  section.trial { padding: 80px 0; }
+  .trial .row { grid-template-columns: 1fr !important; }
+  .trial h2 { font-size: clamp(40px, 12vw, 80px); word-break: break-word; }
+  .trial .steps { padding: 24px; }
   .wrap { padding: 0 24px; }
   nav.top .row { padding: 12px 24px; }
   .hero { padding: 100px 0 60px; }
@@ -216,6 +220,8 @@ footer .socials a:hover { border-color: var(--orange); color: var(--orange); }
   .gallery .slot { grid-column: 1 !important; grid-row: span 1 !important; }
 }
 </style>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 </head>
 <body>
 <nav class="top">
@@ -284,7 +290,7 @@ footer .socials a:hover { border-color: var(--orange); color: var(--orange); }
     <div class="grid">
       <div class="item"><div class="num">2</div><div class="lbl">Centri Fitness</div><div class="desc">Varese e Jerago con Orago.</div></div>
       <div class="item"><div class="num">120<span class="small">+</span></div><div class="lbl">Macchinari Technogym</div><div class="desc">Forza, cardio, funzionale, free weight.</div></div>
-      <div class="item"><div class="num">1000<span class="small">m²</span></div><div class="lbl">Di palestra</div><div class="desc">Sale ampie, postazioni accessibili, zero attese.</div></div>
+      <div class="item"><div class="num">2000<span class="small">m²</span></div><div class="lbl">Di palestra</div><div class="desc">Sale ampie, postazioni accessibili, zero attese.</div></div>
       <div class="item"><div class="num">2014</div><div class="lbl">Presenti dal</div><div class="desc">Un percorso lungo più di dieci anni.</div></div>
     </div>
   </div>
@@ -369,8 +375,8 @@ footer .socials a:hover { border-color: var(--orange); color: var(--orange); }
     <div class="row">
       <div><div class="eyebrow">Partner</div><h2>Solo<br/>il meglio.</h2></div>
       <div class="logos">
-        <div class="logo-box"><span class="placeholder-logo">Technogym</span></div>
-        <div class="logo-box"><span class="placeholder-logo">Sidea</span></div>
+        <div class="logo-box"><img src="assets/partner-technogym.png" alt="Technogym" style="max-height:50px;max-width:160px;object-fit:contain;"></div>
+        <div class="logo-box"><img src="assets/partner-sidea.png" alt="Sidea" style="max-height:50px;max-width:160px;object-fit:contain;filter:invert(1);"></div>
       </div>
     </div>
   </div>
